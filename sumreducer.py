@@ -10,3 +10,5 @@ for line in sys.stdin:
         (last_key, sum) = (key, int(val))
     else:
         (last_key, sum) = (key, sum+int(val))
+if last_key:
+    print( "%s\t%s" % (last_key, sum))
